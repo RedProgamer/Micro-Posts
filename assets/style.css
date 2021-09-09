@@ -1,0 +1,39 @@
+:root {
+    --default: #495057;
+}
+
+.delete {
+    color: red;
+}
+
+small {
+    color: red;
+}
+
+.form-group.error input{
+    border-color: red;
+    position: relative;
+    animation: shake .1s linear;
+    animation-iteration-count: 3;
+}
+
+.form-group.error textarea{
+    border-color: red;
+    position: relative;
+    animation: shake .1s linear;
+    animation-iteration-count: 3;
+}
+
+.form-group small {
+    color: red;
+    visibility: hidden;
+}
+
+.form-group.error small {
+    visibility: visible;
+}
+
+@keyframes shake {
+    0% { left: -5px; }
+    100% { right: -5px; }
+}
